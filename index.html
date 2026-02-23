@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood &amp; Crowns — Force Builder</title>
+  <meta name="description" content="Force builder for the Blood and Crowns medieval wargame. Build, customize, and export your company roster.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-crest">⚔</div>
+    <h1 class="site-title">Blood &amp; Crowns</h1>
+    <p class="site-subtitle">Force Builder</p>
+  </header>
+
+  <!-- FORCE POINTS BAR (sticky) -->
+  <div id="fp-bar" class="fp-bar"></div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="builder-steps">
+    
+    <!-- LEFT SIDEBAR: Configuration -->
+    <aside id="sidebar" class="builder-sidebar"></aside>
+
+    <!-- RIGHT MAIN: Army List -->
+    <main id="main-panel" class="builder-main"></main>
+
+  </div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
