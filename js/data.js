@@ -623,8 +623,8 @@ const BC_DATA = {
       availableLeaders: ["magnate", "noble", "knight_banneret", "bertrand_du_guesclin", "geoffroi_de_charny"],
       mainBattle: ["men_at_arms_mounted", "crossbowmen_genoese", "crossbowmen_light", "feudal_levy"],
       // FIX: Vet Men-at-Arms Mounted → Vanguard; Veteran Footmen removed from vanguard
-      vanguard: ["men_at_arms_afoot", "esquires", "footmen", "vet_men_at_arms_mounted"],
-      reserve: ["vet_men_at_arms_afoot"],
+      vanguard: ["men_at_arms_afoot", "esquires", "footmen"],
+      reserve: ["vet_men_at_arms_afoot", "vet_men_at_arms_mounted"],
       specialRules: [],
       notes: "*Genoese Crossbowmen have the Mercenaries special rule."
     },
@@ -636,7 +636,7 @@ const BC_DATA = {
       availableLeaders: ["magnate", "noble", "knight_banneret"],
       mainBattle: ["men_at_arms_afoot", "men_at_arms_mounted", "crossbowmen_light", "feudal_levy"],
       // FIX: Vet Men-at-Arms Mounted (Burgundians) added to vanguard
-      vanguard: ["vet_men_at_arms_afoot", "esquires", "footmen", "veteran_footmen", "crossbowmen_heavy", "vet_men_at_arms_mounted"],
+      vanguard: ["vet_men_at_arms_afoot", "esquires", "footmen", "veteran_footmen", "crossbowmen_heavy"],
       reserve: ["vet_men_at_arms_mounted"],
       specialRules: [],
       notes: "*Veteran Men-at-Arms, Mounted taken as Vanguard are Burgundians and have the Reluctant Allies special rule."
@@ -651,7 +651,7 @@ const BC_DATA = {
       mainBattle: ["men_at_arms_afoot", "crossbowmen_heavy", "crossbowmen_light", "footmen", "feudal_levy"],
       // FIX: Veteran Footmen added to vanguard
       vanguard: ["men_at_arms_mounted", "esquires", "galloglass", "archers", "vet_men_at_arms_mounted", "veteran_footmen"],
-      reserve: ["vet_men_at_arms_mounted", "vet_men_at_arms_afoot"],
+      reserve: ["vet_men_at_arms_afoot"],
       specialRules: [],
       notes: "⚠ Joan of Arc requires a Noble retinue. *Veteran Men-at-Arms, Mounted taken as Vanguard are Burgundians with Reluctant Allies."
     },
@@ -699,7 +699,7 @@ const BC_DATA = {
       // FIX: footmen_spearmen (no Polearms); footmen added to main and vanguard
       mainBattle: ["men_at_arms_afoot", "footmen_spearmen", "crossbowmen_light", "footmen"],
       // FIX: Footmen added, veteran_footmen_spearmen (no Polearms)
-      vanguard: ["vet_men_at_arms_afoot", "men_at_arms_mounted", "veteran_footmen_spearmen", "footmen", "archers_english"],
+      vanguard: ["vet_men_at_arms_afoot", "men_at_arms_mounted", "veteran_footmen_spearmen", "archers_english"],
       reserve: ["vet_men_at_arms_mounted", "archers_english_veteran"],
       specialRules: [],
       notes: "*Footmen/Veteran Footmen (Spearmen) may not take Polearms. **English units have the Mercenaries special rule."
@@ -713,7 +713,7 @@ const BC_DATA = {
       // FIX: footmen_spearmen (no Polearms)
       mainBattle: ["men_at_arms_mounted", "jinetes", "footmen_spearmen", "slingers", "crossbowmen_light"],
       vanguard: ["vet_men_at_arms_mounted", "men_at_arms_afoot", "veteran_footmen", "crossbowmen_heavy"],
-      reserve: ["vet_men_at_arms_afoot", "men_at_arms_afoot"],
+      reserve: ["vet_men_at_arms_afoot"],
       specialRules: [],
       notes: "*Footmen (Spearmen) may not take Polearms. **Men-at-Arms Afoot, Veteran Footmen, Heavy Crossbowmen in Vanguard are French and have the Mercenaries special rule."
     },
@@ -748,7 +748,7 @@ const BC_DATA = {
       subtitle: "", faction: "unaligned",
       availableLeaders: ["noble", "knight_banneret", "john_crabbe"],
       mainBattle: ["mariners", "footmen", "crossbowmen_light"],
-      vanguard: ["footmen", "able_seamen", "crossbowmen_heavy", "archers", "ships_boys"],
+      vanguard: ["able_seamen", "crossbowmen_heavy", "archers", "ships_boys"],
       reserve: ["men_at_arms_afoot", "vet_men_at_arms_afoot"],
       specialRules: [{ name: "Bausans", description: "During setup, a player may choose to apply the Bausans special rule." }]
     }
